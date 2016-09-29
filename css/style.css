@@ -15,6 +15,10 @@ h1, h2, h3 {
 margin: 0;
 font-family: 'Acme', sans-serif;
 }
+.addy:hover{
+	color:#10A7AF
+	cursor:pointer;
+}
 p{
 	margin:0;
 }
@@ -139,6 +143,9 @@ ul.list-left li {
 .header-right ul li a {
     color: #fff;
     text-decoration: none;
+}
+ul li a:hover, ul li a:focus {
+	color:#10A7AF
 }
 .header{
     background: url(../images/pic2.jpg) no-repeat center;
