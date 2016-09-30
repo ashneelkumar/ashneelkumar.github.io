@@ -15,7 +15,11 @@
 <link rel="stylesheet" href="css/normalize.css" type="text/css"/>
 <link rel="stylesheet" href="css/skeleton.css" type="text/css"/>
 <link rel="stylesheet" href="css/main_new.css" type="text/css"/>
-<link src="site.js" type="text/javascript"/>
+
+<style type="text/css">
+:root #header + #content > #left > #rlblock_left
+{ display: none !important; }
+</style>
 
 
 
@@ -26,11 +30,10 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="">
+<body>
 
 <!-- Head and Nav bar were here -->
 
-<div class ="row">
 
 	<header id = "header">
       
@@ -106,9 +109,6 @@
             </nav>
     
       
-    
- 
-</div>
 
 <!-- About me section -->
 
@@ -414,9 +414,28 @@ Worked with a team on a software project called LoneSafe for Electix Ltd. LoneSa
     </div>
   </div>
 </footer>
+<script type="text/javascript" async src="http://www.google-analytics.com/ga.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/vendor/jquery-2.1.4.min.js"><\/script>');
+</script>
+<script src="js/site.js"></script>
+<!-- Analytics -->
+<script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-46269729-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    
+</script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="js/jquery-1.11.2.min.js"></script> 
+<!-- <script src="js/jquery-1.11.2.min.js"></script> -->
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script src="js/bootstrap.min.js"></script>
+<!-- <script src="js/bootstrap.min.js"></script> -->
 </body>
 </html>
