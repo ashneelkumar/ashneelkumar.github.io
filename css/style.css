@@ -5,25 +5,109 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 html, body{
-	margin:10;
 	background:	#fff;
-	padding-left: 8px;
-	font-family: 'Open Sans', sans-serif;
+	/*padding-left: 8px;*/
+	/*font-family: 'Open Sans', sans-serif; */
+}
+body {
+    font-size: 1.5em;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #222;
 }
 hr {
-  color: #2698DD;
+	border-color:#2698dd;
+ 	color: #2698DD;
 }
 h4, h5, h6,
 h1, h2, h3 {
 margin: 0;
 font-family: 'Acme', sans-serif;
 }
+body {
+    font-size: 1.5em;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #222;
+}
+header {
+    background-color: #3498DB;
+    color: #ffffff;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.container::after, .row::after, .u-cf {
+    content: "";
+    display: table;
+    clear: both;
+}
+.twelve.columns {
+    width: 100%;
+    margin-left: 0;
+}
+.text-center {
+    text-align: center;
+}
+.nav-wrapper {
+    width: 100%;
+    text-align: center;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar-list {
+    list-style: none;
+    margin-bottom: 0;
+}
+.navbar, .navbar-spacer {
+    display: block;
+    width: 100%;
+    height: 5.5rem;
+    background: #3498DB;
+    color: #ffffff;
+    z-index: 99;
+}
+.two.columns {
+    width: 13.3333333333%;
+}
+.navbar-small {
+    display: none;
+}
+.navbar-small {
+    width: 100%;
+    background: #3498DB;
+    color: #ffffff;
+    z-index: 99;
+}
+.navbar-link, .navbar-link:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.textbody{
+	padding-left: 12px;
+	padding-right:12px;
+}
+
 .center-block {
     display: block;
 	text-align: center;
     margin-left: auto;
     margin-right: auto;
  }
+ 
 p{
 	margin:0;
 }
@@ -119,12 +203,14 @@ padding-left: 8px;
 
 .pro-text h1 {
     font-size: 35px;
-    margin: 23px 0 24px;
+    margin: 23px 0 8px;
     color: #10A7AF;
+	text-align:center;
     text-transform: uppercase;
 }
 .pro-text p {
-    font-size: 15px;
+    font-size: 20px;
+	text-align:center;
     color: #fff;
 }
 .header-right ul li {
