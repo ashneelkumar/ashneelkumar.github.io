@@ -10,15 +10,20 @@ html, body{
 	padding-left: 8px;
 	font-family: 'Open Sans', sans-serif;
 }
+hr {
+  color: #2698DD;
+}
 h4, h5, h6,
 h1, h2, h3 {
 margin: 0;
 font-family: 'Acme', sans-serif;
 }
-.addy:hover{
-	color:#10A7AF
-	cursor:pointer;
-}
+.center-block {
+    display: block;
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+ }
 p{
 	margin:0;
 }
