@@ -15,6 +15,8 @@
 <link rel="stylesheet" href="css/normalize.css" type="text/css"/>
 <link rel="stylesheet" href="css/skeleton.css" type="text/css"/>
 <link rel="stylesheet" href="css/main_new.css" type="text/css"/>
+<link rel="stylesheet" href="css/modal.css" type="text/css"/>
+
 
 <style type="text/css">
 :root #header + #content > #left > #rlblock_left
@@ -31,6 +33,14 @@
     <![endif]-->
 </head>
 <body>
+
+<script>
+$(document).on('hidden.bs.modal', function (e) {
+    var target = $(e.target);
+    target.removeData('bs.modal')
+    .find(".modal-body").html('');
+});
+</script>
 
 <!-- Head and Nav bar were here -->
 
@@ -97,7 +107,7 @@
                         <a class="navbar-link" href="#education">education</a>
                     </li>
                     <li class="navbar-item">
-                        <a class="navbar-link" href="#resume">download my Resume</a>
+                        <a class="navbar-link" href="#resume">download resume</a>
                     </li>
                     <li class="navbar-item">
                         <a class="navbar-link" href="#contact">contact</a>
@@ -273,15 +283,24 @@ Worked with a team on a software project called LoneSafe for Electix Ltd. LoneSa
                 <ul id="sidelist">
                 <div class="line-close"></div>
                 <h6>Computer Science</h6>
-                  <li>Programming Fundamentals</li>
-                  <li>Computer Science Fundamentals</li>
-                  <li>Algorithms & Data Structures</li>
-                  <li>Object-Oriented Programming</li>
-                  <li>Declarative Programming</li>
-                  <li>Graphical Programming</li>
-                  <li>Artificial Intelligence</li>
-                  <li>Computer Networks</li>
-                  <li>Internet Programming</li>
+                  <li data-toggle="modal" data-target="#cs1">
+                  <a href="#education2">Programming Fundamentals</a></li>
+                  <li data-toggle="modal" data-target="#cs2">
+                  <a href="#education2">Computer Science Fundamentals</a></li>
+                  <li data-toggle="modal" data-target="#cs3">
+                  <a href="#education2">Algorithms & Data Structures</a></li>
+                  <li data-toggle="modal" data-target="#cs4">
+                  <a href="#education2">Object-Oriented Programming</a></li>
+                  <li data-toggle="modal" data-target="#cs5">
+                  <a href="#education2">Declarative Programming</a></li>
+                  <li data-toggle="modal" data-target="#cs6">
+                  <a href="#education2">Graphical Programming</a></li>
+                  <li data-toggle="modal" data-target="#cs7">
+                  <a href="#education2">Artificial Intelligence</a></li>
+                  <li data-toggle="modal" data-target="#cs8">
+                  <a href="#education2">Computer Networks</a></li>
+                  <li data-toggle="modal" data-target="#cs9">
+                  <a href="#education2">Internet Programming</a></li>
                                   
                 </ul>
                 <ul id="sidelist">
@@ -319,7 +338,7 @@ Worked with a team on a software project called LoneSafe for Electix Ltd. LoneSa
             	<strong>Northcote College</strong>
             	<span class="u-pull-right"> January 2008 - December 2012</span>
             	<br>
-            <span class="italic">National Certificate of Achievement (NCEA), Level 3</span>
+            <span class="italic">National Certificate of Educational Achievement (NCEA), Level 3</span>
             	<br>
             	</p>
                 
@@ -416,7 +435,328 @@ Worked with a team on a software project called LoneSafe for Electix Ltd. LoneSa
          </div>
      </div>
 </section>
+<!-- ----------------------------------------------------------------- -->
 
+<div>
+<!--
+             <div id="myModal" class="modal">
+                  <!-- Modal content -->
+         <!--         <div class="modal-content">
+                    <span class="close">x</span>
+                    <p>This introductory course teaches the fundamental concepts of using and programming 				computers through practical experience and problem-solving in a high-level language.</p>
+                  </div>
+                
+                </div>
+                -->
+                
+ <!-- Modal -->
+
+<div id="cs1" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Programming Fundamentals</h4>
+      </div>
+      <div class="modal-body">
+        <p>This introductory course teaches the fundamental concepts of using and programming computers through practical experience and problem-solving in a high-level language.</p>
+        <p>Students who successfully complete this paper should be able to:</p>
+        <ol>
+        <li> Create simple algorithms</li>
+        <li> Express an algorithm as a program</li>
+        <li> Write technical computer programs that incorporate fundamental programming constructs such as conditionals, repetition, functions, pointers and recursion </li>
+        <li> Write technical computer programs that use console input/output and text files</li>
+        <li> Design, implement, test and debug simple computer programs</li>
+        
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    
+
+  </div>
+</div>
+
+<!------- ----->
+
+<div id="cs2" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Computer Science Fundamentals</h4>
+      </div>
+      <div class="modal-body">
+        <p>An introduction to computer science: the discipline, computer systems, the theory of problem-solving and computer applications. Practical laboratory work is an important part of this paper.</p>
+        <p>Students who successfully complete this paper should be able to:</p>
+        <ol>
+        <li> Write technical computer programs relating to a range of topics including the use of simple data structures and command line operations</li>
+        <li> Design simple logic circuits using Boolean algebra</li>
+        <li> Describe the fundamental elements of a computer and the importance of the binary number system </li>
+        <li> Design simple assembler programs for a virtual machine</li>        
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!------- ----->
+
+<div id="cs3" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Algorithms & Data Structures</h4>
+      </div>
+      <div class="modal-body">
+        <p>Structured types. Array, list, tree and graph algorithms. Hash tables. Dynamic data structures. Abstract data types. Laboratory work is an important part of this course.</p>
+        
+        <p>Students who successfully complete this paper should be able to:</p>
+        <ol>
+        <li>Represent lists, stacks, queues, and other data structures in an appropriate way for the target programming language.</li>
+        <li> Explain the advantages/disadvantages of particular representations of these structures in particular circumstances.</li>
+        <li> Design and implement computer programs that make use of these structures. </li>
+        <li> Discuss the concepts of Abstract Data Types, including encapsulation and data hiding. </li>        
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!------- ----->
+<div id="cs4" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Object-Oriented Programming</h4>
+      </div>
+      <div class="modal-body">
+        <p>Introduction to Object-Oriented programming; classes, objects, templates, inheritance, polymorphism, iterators, object libraries.</p>
+         <p>Students who successfully complete this paper should be able to:</p>
+        <ol>
+        <li>Design and implement C++ programs using object-oriented programming techniques. </li>
+        <li>Design and implement C++ programs , using inheritance, polymorphism, exception handling.</li>
+        <li>Design and implement programs, using templates and the STL object library.  </li>      
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!------- ----->
+<div id="cs5" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Declarative Programming</h4>
+      </div>
+      <div class="modal-body">
+        <p>Basic functional programming: functions, pattern matching, types, recursion, list processing. Basic logic programming: clauses, recursion, structures, arithmetic, list processing. Programming language concepts. Programming paradigms and language selection.</p>
+         <p>Students who successfully complete this paper should be able to:</p>
+        <ol>
+        <li>Design, write and run functional and logic programs using simple programming concepts: types, functions, recursion, pattern matching, facts, rules, predicates. </li>
+        <li>Analyse the correctness and evaluate the design of given functional and logic programming modules. </li>
+        <li>Design, write, test and run programs using advanced programming concepts: data abstraction, list, polymorphisms and overloading. </li>
+        <li>Analyse a moderately complex given problem, identify and design data types and modules necessary to solve the problem using basic and advanced functional programming concepts, write, run and test the program. </li>   
+        <li>Analyse a moderately complex given problem, identify and design the required data types and modules necessary to solve the problem using basic and advanced logic programming concepts, write, run and test the program. </li>   
+        <li>Describe the main attributes of the declarative programming paradigm, the difference between functional and logic programming languages, and the difference between imperative and declarative programming paradigm. </li>   
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!------- ----->
+<div id="cs6" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Graphical Programming</h4>
+      </div>
+      <div class="modal-body">
+        <p>Programming graphical-user-interfaces using an event-driven model. Drawing and transformation of graphical objects. Rendering in 3D. Animation techniques. Programming with graphical libraries.</p>
+         <p>Students who successfully complete this paper should be able to:</p>
+        <ol>
+        <li>Describe key concepts in computer graphics. </li>
+        <li>Design computer programs that display simple graphics in 2D and 3D using Java. </li>
+        <li>Discuss the graphics concepts pertaining to computer games and virtual reality simulations. </li> 
+        <li>Identify the advantages and disadvantages of various graphics systems and technologies.</li>     
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!------- ----->
+<div id="cs7" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Artificial Intelligence</h4>
+      </div>
+      <div class="modal-body">
+        <p>AI programming. State space representation and search. Heuristics. Planning. Game playing. Knowledge representation. Knowledge-based systems. Natural language processing. Machine learning. Reasoning under uncertainty. Philosophical issues. </p>
+         <p>Students who successfully complete this paper should be able to:</p>
+        <ol>
+        <li>Describe the main Artificial Intelligence techniques used in computing.</li>
+        <li>Design and program computers to store and manipulate knowledge.  </li>
+        <li>Describe, and in some cases program, the special techniques that can be used to perform intelligent tasks such as searching, game playing, natural language processing and machine learning by computers.  </li>
+        <li>Use logic for inference and fuzzy logic and some of its applications.  </li> 
+        <li>Identify the advantages and disadvantages of applying various AI techniques in solving real world problems through exploring the various applications of AI.  </li> 
+              
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!------- ----->
+<div id="cs8" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Computer Networks</h4>
+      </div>
+      <div class="modal-body">
+        <p>A layered approach to data communications and the Internet protocols.</p>
+         <p>Students who successfully complete this paper should be able to:</p>
+        <ol>
+        <li>Describe key computer network concepts, architectures and protocols. </li>
+        <li>Relate algorithms, network services and products to each other. </li>
+        <li>Apply concepts and principles to network design and management using the current standards. </li> 
+        <li>Apply fundamental network analysis tools. </li> 
+        <li>Discuss professional and ethical issues relating to data communication systems and their application, especially concerning Internet security. </li> 
+        <li>Apply the recent acquired knowledge to develop or apply simple network related programs. </li>      
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!------- ----->
+<div id="cs9" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Internet Programming</h4>
+      </div>
+      <div class="modal-body">
+        <p>Advanced concepts of programming computers across the Internet: scripting, HTML, client and server-side programs, distributed objects, distributed object frameworks, security.</p>
+         <p>Students who successfully complete this paper should be able to:</p>
+        <ol>
+        <li>Describe the main techniques used in Internet Programming. </li>
+        <li>Implement a database driven Internet Application using PHP and MySQL. </li>
+        <li>Implement a server side application using servlets, JSPs and J2EE components. </li> 
+        <li>Apply the Internet Programming design concepts in solving real world problems. </li>
+        <li>Identify the advantages and disadvantages of various Internet Programming techniques to real world problems.</li>
+        <li>Demonstrate knowledge of new and emerging internet programming technologies. </li>     
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!------- IT Modals ----->
+
+<div id="cs8" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Descripton</p>
+         <p>Students who successfully complete this paper should be able to:</p>
+        <ol>
+        <li> </li>
+        <li> </li>
+        <li> </li> 
+        <li> </li>
+        <li> </li>
+        <li> </li>     
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!------- ----->
+
+
+
+
+
+
+
+                
+</div>
 
     
 <!-- ----------------------------------------------------------------- -->
@@ -435,6 +775,7 @@ Worked with a team on a software project called LoneSafe for Electix Ltd. LoneSa
 window.jQuery || document.write('<script src="js/vendor/jquery-2.1.4.min.js"><\/script>');
 </script>
 <script src="js/site.js"></script>
+
 <!-- Analytics -->
 <script type="text/javascript">
 
@@ -449,8 +790,8 @@ window.jQuery || document.write('<script src="js/vendor/jquery-2.1.4.min.js"><\/
     
 </script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<!-- <script src="js/jquery-1.11.2.min.js"></script> -->
+ <script src="js/jquery-1.11.2.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
-<!-- <script src="js/bootstrap.min.js"></script> -->
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
