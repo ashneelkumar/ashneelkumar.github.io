@@ -246,6 +246,11 @@ h2 {
 
 .text-center {
   text-align: center; }
+ 
+.text-centre-white {
+	text-align: center;
+	color:#ffffff;
+}
 
 .center {
   display: block;
