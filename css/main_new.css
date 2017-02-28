@@ -132,11 +132,15 @@ IMG.displayed {
   width: 80px; }
 
 .thumbnail-wrapper {
-  width: 100%; }
+ /* width: 100%; */
+  width: 70%; /* Will shrink image to 30% of its original width */
+  height: auto;    
+  }
 
 .thumbnail {
   margin-top: 5%;
-  padding: 25% 0; }
+  padding: 25% 0; 
+  }
 
 #thumbnail-ade {
   margin-top: 5%;
