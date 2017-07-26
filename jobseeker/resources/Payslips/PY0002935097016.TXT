@@ -1,0 +1,64 @@
+                                           LOCN: Albany
+     Staff: 23953
+ 
+ 
+ 
+ 
+ 
+ 
+                                   Ashneel Kumar
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     PAY NO:   2672  PAY DATE: 12 Jul 2017   BANK INFORMATION
+     PAY PERIOD 03 Jul 2017  TO 09 Jul 2017  BSB:011825  A/C: 0063369001
+                                             A/C NAME: Kumar A A
+ 
+ 
+ 
+ 
+ 
+                                             TAX CODE/% :SBSL
+                                             IRD NUMBER: 103692482
+ 
+ 
+     COMPONENT         THIS PAY          YTD     DATE      HOURS    RATE
+     ORD HRS             331.50      1343.00               19.50   17.00
+     ANN LVE 8%           26.52       107.44
+     GROSS               358.02      1450.44
+     TAXABLE             358.02      1450.44
+ 
+     TAX                  42.56       172.10
+     STUDENT LN           42.96       173.76
+     NETT                272.50      1104.58
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
