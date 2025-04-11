@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ashneel Kumar</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 
@@ -34,6 +35,7 @@
       padding: 0.5rem 1rem;
       border-radius: 9999px;
     }
+
   </style>
 
 </head>
@@ -42,17 +44,20 @@
 <header class="min-h-screen flex items-center justify-center px-4 hero-bg">
     <div class="text-center max-w-2xl" data-aos="fade-up">
       <img src="assets/profile.jpg" alt="Profile" class="w-32 h-32 rounded-full mx-auto shadow-lg mb-4">
-      <h1 class="text-4xl md:text-5xl font-bold mb-2 text-[#004aad]">Ashneel Kumar</h1>
+      <h1 class="text-4xl md:text-5xl font-bold mb-2 text-[#444440]">Ashneel Kumar</h1>
       <p class="text-lg text-[#004aad] mb-6">Senior Software Engineer</p>
-      <p class="mb-6 text-[#444440]">
-        Experienced and passionate software engineer with 7 years of experience building sleek front-end components and robust back-end solutions for Sitecore CMS-driven websites.
-        Currently pursuing the Meta Front-End Developer Professional Certificate to expand creative front-end capabilities.
-      </p>
+      <div class="w-full px-4 md:px-8 max-w-4xl mx-auto">
+        <p class="mb-6 text-[#444440] text-base md:text-lg leading-relaxed">
+          Experienced and passionate software engineer with 7 years of experience building sleek front-end components and robust back-end solutions for Sitecore CMS-driven websites.
+          Currently pursuing the Meta Front-End Developer Professional Certificate to expand creative front-end capabilities.
+        </p>
+      </div>
+      
 
       <!-- Navigation Links -->
       <div class="flex justify-center gap-8 mb-6">
         <a href="#skills" class="nav-link">Skills</a>
-        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#experience" class="nav-link">Experiences</a>
         <a href="#testimonials" class="nav-link">Testimonials</a>
       </div>
   
@@ -64,9 +69,8 @@
 
       <!-- LinkedIn Badge -->
       <div class="flex justify-center mb-6">
-        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="ashneelakumar" data-version="v1">
-            <a class="badge-base__link LI-simple-link" href="https://nz.linkedin.com/in/ashneelakumar?trk=profile-badge"></a>
-        </div>
+        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="ashneelakumar" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://nz.linkedin.com/in/ashneelakumar?trk=profile-badge">Ashneel Kumar LinkedIn Profile</a></div>
+              
       </div>
     </div>
   </header>
@@ -91,58 +95,106 @@
       </div>
     </div>
   </section>
+  
+    <!-- Work Experience -->
+  <section class="bg-white py-10 px-6 md:px-20 flex justify-center">
+    <div class="max-w-4xl w-full">
+      <h2 class="text-3xl font-bold text-[#004aad] mb-8 text-center">Work Experience</h2>
+  
+      <div class="space-y-10">
+        <!-- Job 1 -->
+        <div class="flex flex-col md:flex-row md:items-start gap-6">
+          <!-- Logo -->
+          <a href="https://nz.linkedin.com/company/mercurynz" target="_blank" rel="noopener noreferrer">
+            <img src="assets/mercury_logo.jpg" alt="Mercury logo"
+                 class="w-16 h-16 object-contain rounded-xl shadow-md hover:scale-105 transition-transform" />
+          </a>
+  
+          <!-- Job Info -->
+          <div>
+            <h3 class="text-xl font-semibold text-black">Senior Software Engineer</h3>
+            <p class="text-[#004aad] font-medium">Mercury · Full-time</p>
+            <p class="text-sm text-gray-600">Jan 2024 – Present</p>
+            <ul class="list-disc list-inside mt-2 text-gray-800 space-y-1 text-base">
+                <li>Led release management and code review efforts across multiple projects.</li>
+                <li>Refactored legacy codebases to enhance maintainability and performance.</li>
+                <li>Managed branching strategies and resolved critical P1 issues.</li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Job 2 -->
+        <div class="flex flex-col md:flex-row md:items-start gap-6">
+            <a href="https://nz.linkedin.com/company/mercurynz" target="_blank" rel="noopener noreferrer">
+                <img src="assets/mercury_logo.jpg" alt="Mercury logo"
+                 class="w-16 h-16 object-contain rounded-xl shadow-md hover:scale-105 transition-transform" />
+          </a>
+          <div>
+            <h3 class="text-xl font-semibold text-black">Software Engineer</h3>
+            <p class="text-[#004aad] font-medium">Mercury · Full-time</p>
+            <p class="text-sm text-gray-600">May 2022 – Jan 2024</p>
+            <ul class="list-disc list-inside mt-2 text-gray-800 space-y-1 text-base">
+                <li>Implemented new website features and resolved key production bugs.</li>
+                <li>Upgraded Sitecore from 8.1 to 10.1 and redesigned the service sign-up process.</li>
+            </ul>
+          </div>
+        </div>
 
-  <!-- Work Experience -->
-  <section id="experience" class="py-16 px-6 bg-gray-50">
-    <div class="max-w-4xl mx-auto" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-8 text-center text-[#004aad]">Work Experience</h2>
-      <!-- Experience sections -->
-      <div class="mb-6">
-        <h3 class="text-xl font-semibold text-[#004aad]">Senior Software Engineer – Mercury NZ</h3>
-        <p class="text-sm text-gray-500">Jan 2024 – Present</p>
-        <ul class="list-disc list-inside mt-2 text-gray-700">
-          <li>Led release management and code review efforts across multiple projects.</li>
-          <li>Refactored legacy codebases to enhance maintainability and performance.</li>
-          <li>Managed branching strategies and resolved critical P1 issues.</li>
-        </ul>
-      </div>
+        <!-- Job 3 -->
+        <div class="flex flex-col md:flex-row md:items-start gap-6">
+            <a href="https://nz.linkedin.com/company/trustpower" target="_blank" rel="noopener noreferrer">
+                <img src="assets/trustpower_logo.jpg" alt="Trustpower logo"
+                    class="w-16 h-16 object-contain rounded-xl shadow-md hover:scale-105 transition-transform" />
+            </a>
+            <div>
+                <h3 class="text-xl font-semibold text-black">Software Engineer</h3>
+                <p class="text-[#004aad] font-medium">Trustpower · Full-time/Remote</p>
+                <p class="text-sm text-gray-600">Dec 2017 – May 2022 </p>
+                <ul class="list-disc list-inside mt-2 text-gray-800 space-y-1 text-base">
+                    <li>Implemented new website features and resolved key production bugs.</li>
+                    <li>Upgraded Sitecore from 8.1 to 10.1 and redesigned the service sign-up process.</li>
+                </ul>
+            </div>
+        </div>
 
-      <div class="mb-6">
-        <h3 class="text-xl font-semibold text-[#004aad]">Software Engineer – Mercury NZ</h3>
-        <p class="text-sm text-gray-500">May 2022 – Jan 2024</p>
-        <ul class="list-disc list-inside mt-2 text-gray-700">
-          <li>Implemented new website features and resolved key production bugs.</li>
-          <li>Upgraded Sitecore from 8.1 to 10.1 and redesigned the service sign-up process.</li>
-        </ul>
-      </div>
+           <!-- Job 4 -->
+           <div class="flex flex-col md:flex-row md:items-start gap-6">
+            <a href="https://nz.linkedin.com/company/omexomnz" target="_blank" rel="noopener noreferrer">
+                <img src="assets/omexomnz_logo.jpg" alt="Electrix logo"
+                    class="w-16 h-16 object-contain rounded-xl shadow-md hover:scale-105 transition-transform" />
+            </a>
+            <div>
+                <h3 class="text-xl font-semibold text-black">Software Engineer</h3>
+                <p class="text-[#004aad] font-medium">Electrix · Contract</p>
+                <p class="text-sm text-gray-600">Nov 2016 – Dec 2017</p>
+                <ul class="list-disc list-inside mt-2 text-gray-800 space-y-1 text-base">
+                    <li>Developed LoneSafe, a cloud platform to monitor lone workers via Android devices.</li>
+                </ul>
+            </div>
+        </div>
 
-      <div class="mb-6">
-        <h3 class="text-xl font-semibold text-[#004aad]">Software Developer – Trustpower</h3>
-        <p class="text-sm text-gray-500">Dec 2017 – May 2022</p>
-        <ul class="list-disc list-inside mt-2 text-gray-700">
-          <li>Redesigned and integrated Trustpower & Mercury websites post-merger.</li>
-          <li>Led development of abandoned cart and save-for-later e-commerce features.</li>
-        </ul>
-      </div>
-
-      <div class="mb-6">
-        <h3 class="text-xl font-semibold text-[#004aad]">Software Developer – Electrix</h3>
-        <p class="text-sm text-gray-500">Nov 2016 – Dec 2017</p>
-        <ul class="list-disc list-inside mt-2 text-gray-700">
-          <li>Developed LoneSafe, a cloud platform to monitor lone workers via Android devices.</li>
-        </ul>
-      </div>
-
-      <div class="mb-6">
-        <h3 class="text-xl font-semibold text-[#004aad]">Intern Software Developer – Massey University</h3>
-        <p class="text-sm text-gray-500">Aug 2016 – May 2017</p>
-        <ul class="list-disc list-inside mt-2 text-gray-700">
-          <li>Contributed to the virtual research environment portal for the Geoinformatics Collaboratory.</li>
-        </ul>
+        
+           <!-- Job 5 -->
+           <div class="flex flex-col md:flex-row md:items-start gap-6">
+            <a href="https://nz.linkedin.com/school/massey-university" target="_blank" rel="noopener noreferrer">
+                <img src="assets/massey_university_logo.jpg" alt="Massey University logo"
+                    class="w-16 h-16 object-contain rounded-xl shadow-md hover:scale-105 transition-transform" />
+            </a>
+            <div>
+                <h3 class="text-xl font-semibold text-black">Intern Software Engineer</h3>
+                <p class="text-[#004aad] font-medium">Massey University · Contract</p>
+                <p class="text-sm text-gray-600">Aug 2016 – May 2017</p>
+                <ul class="list-disc list-inside mt-2 text-gray-800 space-y-1 text-base">
+                    <li>Contributed to the virtual research environment portal for the Geoinformatics Collaboratory.</li>                
+                </ul>
+            </div>
+        </div>
       </div>
     </div>
   </section>
+  
 
+    <!-- Testimonials Carousel -->
   <section id="testimonials" class="py-16 px-6 bg-white">
     <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
       <!-- Carousel Controls -->
@@ -155,27 +207,27 @@
         <div id="testimonial-container" class="flex transition-transform duration-500 ease-in-out">
           <!-- Testimonial slides (same structure, only content changes) -->
           <div class="w-full flex-shrink-0 px-4">
-            <div class="bg-gray-100 rounded-xl p-6 shadow-md">
+            <div class="bg-[#ccdffe] rounded-xl p-6 shadow-md">
               <p class="text-gray-700 italic">“I just wanted to say a great big thank you to you, Ashneel. Without your help and support as I am learning about my new team, the technology and the releases, I would probably be feeling very stressed by now. You are extremely proactive and take control of situations and tasks and nothing seems to be too much trouble for you. I don't know where I would be without you. Thank you again!!”</p>
               <p class="mt-4 font-semibold text-gray-900">— Bev - Delivery Lead, Mercury NZ</p>
             </div>
           </div>
           <div class="w-full flex-shrink-0 px-4">
-            <div class="bg-gray-100 rounded-xl p-6 shadow-md">
+            <div class="bg-[#ccdffe] rounded-xl p-6 shadow-md">
               <p class="text-gray-700 italic">“Ashneel has stepped up to often be the contact point of a critical DEX customer onboarding flow (credit check) and in addition to showing great SME knowledge and a supporting attitude, 
                 he has also proactively updated and enhanced the documentation to assist others in the future showing leadership and a 'no silos' attitude - Great work Ash!”</p>
               <p class="mt-4 font-semibold text-gray-900">— Samantha - Principal Software Engineer Mercury NZ</p>
             </div>
           </div>
           <div class="w-full flex-shrink-0 px-4">
-            <div class="bg-gray-100 rounded-xl p-6 shadow-md">
+            <div class="bg-[#ccdffe] rounded-xl p-6 shadow-md">
               <p class="text-gray-700 italic">“Ashneel shows leadership in all his actions. He consistently steps in where there is a gap to fill. 
                 Thank you Ash, you make it a great place to work. MVP!”</p>
               <p class="mt-4 font-semibold text-gray-900">— Ashlee - Product Owner, Mercury NZ</p>
             </div>
           </div>
           <div class="w-full flex-shrink-0 px-4">
-            <div class="bg-gray-100 rounded-xl p-6 shadow-md">
+            <div class="bg-[#ccdffe] rounded-xl p-6 shadow-md">
               <p class="text-gray-700 italic">“You are an amazing FE developer - you have such great knowledge and it really helps us to deliver quickly. This is specially important due to our team always having so much work piling up behind in hte backlog. 
                 Your effort on Save for Later was huge and you almost single handedly delivered this complex and frustrating feature. Thank you for this.”</p> </br>
                 <p class="text-gray-700 italic">“You are such a pleasure to have in the team! Great sense of humour and team spirit! 
@@ -184,20 +236,20 @@
             </div>
           </div>
           <div class="w-full flex-shrink-0 px-4">
-            <div class="bg-gray-100 rounded-xl p-6 shadow-md">
+            <div class="bg-[#ccdffe] rounded-xl p-6 shadow-md">
               <p class="text-gray-700 italic">“I think any given problem the team has, Ashneel is willing to step up and contribute or take on the challenge.  A recent example of this is with google analytics.   
                 His can-do positive attitude is a huge asset to the team and I truly admire it. Keep it up!”</p>
               <p class="mt-4 font-semibold text-gray-900">— Ashlee - Product Owner, Mercury NZ</p>
             </div>
           </div>
           <div class="w-full flex-shrink-0 px-4">
-            <div class="bg-gray-100 rounded-xl p-6 shadow-md">
+            <div class="bg-[#ccdffe] rounded-xl p-6 shadow-md">
               <p class="text-gray-700 italic">“Ashneel is a competent and capable person who has grown into his role and place in the wider team, recently he has stepped up to the diverse leadership program and I would fully endorse him for future senior and leadership roles”</p>
               <p class="mt-4 font-semibold text-gray-900">— Samantha - Principal Software Engineer, Mercury NZ</p>
             </div>
           </div>
           <div class="w-full flex-shrink-0 px-4">
-            <div class="bg-gray-100 rounded-xl p-6 shadow-md">
+            <div class="bg-[#ccdffe] rounded-xl p-6 shadow-md">
               <p class="text-gray-700 italic">“TP Prod Sitecore release.  - [External] had agreed to manage a prod deployment of an issue.  On deployment day [external] did not respond to messages and did not do the release.  I was super impressed with Ashneel in picking up the release and getting it done  with minimal fuss and zero issues.”</p></br>
               <p class="text-gray-700 italic">“Always putting hand up to manage a project deployment,  outside of core hours.    -  
                 very adaptable and keen to help which makes the life of a delivery lead easy :) </p></br>
@@ -211,7 +263,7 @@
           </div>
 
           <div class="w-full flex-shrink-0 px-4">
-            <div class="bg-gray-100 rounded-xl p-6 shadow-md">
+            <div class="bg-[#ccdffe] rounded-xl p-6 shadow-md">
               <p class="text-gray-700 italic">“You've proven to be a great resource on this project with your deep knowledge and leadership on the dev-ops side of things as well as branching strategies.
                 The effort you put in, stepping up to build out wiki articles and ensuring we are all on track doesn't go unnoticed!”</p></br>
               <p class="text-gray-700 italic">“I've really appreciated the support with my on-boarding onto this project as well - 
@@ -224,21 +276,29 @@
             </div>
           </div>
           <div class="w-full flex-shrink-0 px-4">
-            <div class="bg-gray-100 rounded-xl p-6 shadow-md">
+            <div class="bg-[#ccdffe] rounded-xl p-6 shadow-md">
               <p class="text-gray-700 italic">“proactive mindset -
                  things like seeking feedback, taking on feedback e.g around being a coach vs a hero, summer of tech, becoming slack champion, taking on tech debt discussions”</p>
                  <p class="mt-4 font-semibold text-gray-900">— Anita - Delivery Lead, Mercury NZ</p>
             </div>
           </div>
           <div class="w-full flex-shrink-0 px-4">
-            <div class="bg-gray-100 rounded-xl p-6 shadow-md">
+            <div class="bg-[#ccdffe] rounded-xl p-6 shadow-md">
               <p class="text-gray-700 italic">“Thanks for all your help on the Discounted Rates work Ash! You are always so helpful and responsive 
                 (even jumping online quickly to help on your day off!!). Thanks for always communicating well and keeping us in the loop - you are fantastic to work with :)”</p>
                  <p class="mt-4 font-semibold text-gray-900">— Laura - Customer Applications Specialist, Mercury NZ</p>
             </div>
-          </div>
-        </div>        </div>
-        
+          </div>   
+          <div class="w-full flex-shrink-0 px-4">
+            <div class="bg-[#ccdffe] rounded-xl p-6 shadow-md">
+              <p class="text-gray-700 italic">“I have not had the chance to work directly with you on any coding projects, but from the first Codemaina event I went to with you
+                 to which you were quite quite at to the ability to now do speed interviews for graduates looking for specific skills that can help Mercury in the future
+                  you have improved massivily in confidance in your own skills and comunication in general, taking on more of this and manageing the contractors in the Sitecore
+                   area is another step in the right direction for improving your skills.  keep challangeing yourself as it all helps.”</p>
+                 <p class="mt-4 font-semibold text-gray-900">— Wayne - Software Engineering Lead, Mercury NZ</p>
+            </div>
+          </div>   
+          
       </div>
     </div>
   </section>
