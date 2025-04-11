@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
   <style>
     /* Gradient background and opacity */
     .hero-bg {
@@ -34,6 +35,7 @@
       border-radius: 9999px;
     }
   </style>
+
 </head>
 <body class="bg-white text-gray-800 font-sans">
 <!-- Hero -->
@@ -57,7 +59,7 @@
       <!-- Action Buttons -->
       <div class="flex justify-center gap-6 mb-6">
         <a href="mailto:ashneelakumar94@gmail.com" class="inline-block bg-black text-white px-6 py-3 rounded-full text-lg font-semibold hover:opacity-90 transition">Contact Me</a>
-        <a href="assets/AshneelKumarV2.pdf" target="_blank" class="inline-block bg-black text-white px-6 py-3 rounded-full text-lg font-semibold hover:opacity-90 transition">Resume</a>
+        <a href="assets/assets/AshneelKumarV2.pdf" target="_blank" class="inline-block bg-black text-white px-6 py-3 rounded-full text-lg font-semibold hover:opacity-90 transition">Resume</a>
       </div>
 
       <!-- LinkedIn Badge -->
@@ -94,7 +96,7 @@
   <section id="experience" class="py-16 px-6 bg-gray-50">
     <div class="max-w-4xl mx-auto" data-aos="fade-up">
       <h2 class="text-3xl font-bold mb-8 text-center text-[#004aad]">Work Experience</h2>
-
+      <!-- Experience sections -->
       <div class="mb-6">
         <h3 class="text-xl font-semibold text-[#004aad]">Senior Software Engineer – Mercury NZ</h3>
         <p class="text-sm text-gray-500">Jan 2024 – Present</p>
@@ -141,11 +143,15 @@
     </div>
   </section>
 
-  <!-- Testimonials Carousel -->
   <section id="testimonials" class="py-16 px-6 bg-white">
     <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-8 text-[#004aad]">Testimonials</h2>
-      <div class="relative overflow-hidden max-w-2xl mx-auto">
+      <!-- Carousel Controls -->
+      <div class="flex justify-between mt-6 mb-8 max-w-s mx-auto">
+        <button onclick="prevTestimonial()" class="bg-gray-300 hover:bg-gray-400 text-gray-800 px-4 py-2 rounded-full">&larr;</button>
+        <h2 class="text-3xl font-bold text-[#004aad]">Testimonials</h2>
+        <button onclick="nextTestimonial()" class="bg-gray-300 hover:bg-gray-400 text-gray-800 px-4 py-2 rounded-full">&rarr;</button>
+      </div>
+        <div class="relative overflow-hidden max-w-2xl mx-auto">
         <div id="testimonial-container" class="flex transition-transform duration-500 ease-in-out">
           <!-- Testimonial slides (same structure, only content changes) -->
           <div class="w-full flex-shrink-0 px-4">
@@ -224,12 +230,15 @@
                  <p class="mt-4 font-semibold text-gray-900">— Anita - Delivery Lead, Mercury NZ</p>
             </div>
           </div>
+          <div class="w-full flex-shrink-0 px-4">
+            <div class="bg-gray-100 rounded-xl p-6 shadow-md">
+              <p class="text-gray-700 italic">“Thanks for all your help on the Discounted Rates work Ash! You are always so helpful and responsive 
+                (even jumping online quickly to help on your day off!!). Thanks for always communicating well and keeping us in the loop - you are fantastic to work with :)”</p>
+                 <p class="mt-4 font-semibold text-gray-900">— Laura - Customer Applications Specialist, Mercury NZ</p>
+            </div>
+          </div>
         </div>        </div>
-        <!-- Carousel Controls -->
-        <div class="flex justify-between mt-6 max-w-xs mx-auto">
-          <button onclick="prevTestimonial()" class="bg-gray-300 hover:bg-gray-400 text-gray-800 px-4 py-2 rounded-full">&larr;</button>
-          <button onclick="nextTestimonial()" class="bg-gray-300 hover:bg-gray-400 text-gray-800 px-4 py-2 rounded-full">&rarr;</button>
-        </div>
+        
       </div>
     </div>
   </section>
