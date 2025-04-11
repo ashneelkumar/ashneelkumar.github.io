@@ -1,0 +1,44 @@
+/* styles.css */
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-bg {
+      padding: 4rem 2rem;
+    }
+  
+    .nav-link {
+      font-size: 0.875rem;
+      padding: 0.5rem 0.75rem;
+    }
+  
+    .text-lg {
+      font-size: 1.125rem;
+    }
+  
+    .text-xl {
+      font-size: 1.5rem;
+    }
+  
+    .text-3xl {
+      font-size: 2rem;
+    }
+  
+    .text-4xl {
+      font-size: 2.25rem;
+    }
+  
+    .text-5xl {
+      font-size: 3rem;
+    }
+  
+    .grid-cols-2 {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .md\:grid-cols-3 {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  
+    .mb-6 {
+      margin-bottom: 1.5rem;
+    }
+  }
