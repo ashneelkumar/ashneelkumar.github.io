@@ -1,1209 +1,265 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ashneel Kumar</title>
-
-<!-- Bootstrap -->
-<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
-<!-- CSS -->
-<!--<link href="css/style.css" rel="stylesheet" type="text/css" media="all" /> -->
-<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"/>
-<link href="chrome://lightswitch_css/content/loff.css" rel="stylesheet" type="text/css"/>
-<link rel="stylesheet" href="css/normalize.css" type="text/css"/>
-<link rel="stylesheet" href="css/skeleton.css" type="text/css"/>
-<link rel="stylesheet" href="css/main_new.css" type="text/css"/>
-<link rel="stylesheet" href="css/modal.css" type="text/css"/>
-
-
-<style type="text/css">
-:root #header + #content > #left > #rlblock_left
-{ display: none !important; }
-</style>
-
-
-
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ashneel Kumar</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <style>
+    /* Gradient background and opacity */
+    .hero-bg {
+      background: linear-gradient(180deg, rgba(127, 197, 245, 0.2), rgba(183, 229, 166, 0.2), rgba(138, 168, 216, 0.2));
+    }
+    /* Custom styles for navigation links */
+    .nav-link {
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #444440;
+      padding: 0.75rem 1rem;
+      transition: all 0.3s ease;
+      display: inline-block;
+      position: relative;
+    }
+    .nav-link:hover::after {
+      width: 100%;
+    }
+    .nav-link:hover {
+      color: #004aad;
+      background-color: rgba(0, 74, 173, 0.1);
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+    }
+  </style>
 </head>
-<body>
+<body class="bg-white text-gray-800 font-sans">
+<!-- Hero -->
+<header class="min-h-screen flex items-center justify-center px-4 hero-bg">
+    <div class="text-center max-w-2xl" data-aos="fade-up">
+      <img src="assets/profile.jpg" alt="Profile" class="w-32 h-32 rounded-full mx-auto shadow-lg mb-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-2 text-[#004aad]">Ashneel Kumar</h1>
+      <p class="text-lg text-[#004aad] mb-6">Senior Software Engineer</p>
+      <p class="mb-6 text-[#444440]">
+        Experienced and passionate software engineer with 7 years of experience building sleek front-end components and robust back-end solutions for Sitecore CMS-driven websites.
+        Currently pursuing the Meta Front-End Developer Professional Certificate to expand creative front-end capabilities.
+      </p>
 
-<script>
-$(document).on('hidden.bs.modal', function (e) {
-    var target = $(e.target);
-    target.removeData('bs.modal')
-    .find(".modal-body").html('');
-});
-</script>
+      <!-- Navigation Links -->
+      <div class="flex justify-center gap-8 mb-6">
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+      </div>
+  
+      <!-- Action Buttons -->
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="mailto:ashneelakumar94@gmail.com" class="inline-block bg-black text-white px-6 py-3 rounded-full text-lg font-semibold hover:opacity-90 transition">Contact Me</a>
+        <a href="Ashneel_Kumar_Resume.pdf" target="_blank" class="inline-block bg-black text-white px-6 py-3 rounded-full text-lg font-semibold hover:opacity-90 transition">Resume</a>
+      </div>
 
-<!-- Head and Nav bar were here -->
+      <!-- LinkedIn Badge -->
+      <div class="flex justify-center mb-6">
+        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="ashneelakumar" data-version="v1">
+            <a class="badge-base__link LI-simple-link" href="https://nz.linkedin.com/in/ashneelakumar?trk=profile-badge"></a>
+        </div>
+      </div>
+    </div>
+  </header>
 
+  <!-- Skills -->
+  <section id="skills" class="py-16 px-6 bg-white">
+    <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-8 text-[#004aad]">Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-lg">
+        <span>ReactJS</span>
+        <span>HTML5 / CSS</span>
+        <span>JavaScript / jQuery</span>
+        <span>SQL</span>
+        <span>.NET / C#</span>
+        <span>Azure DevOps</span>
+        <span>Postman / Git</span>
+        <span>Figma</span>
+        <span>Redux</span>
+        <span>UI/UX Collaboration</span>
+        <span>Responsive Web Design</span>
+        <span>Production Deployment</span>
+      </div>
+    </div>
+  </section>
 
-	<header id = "header">
-      
-            <div class="row">
-                <div class="twelve columns">
-                    <h1 class="text-center">Ashneel Kumar</h1>
-                </div>
-               <!-- ::after -->
+  <!-- Work Experience -->
+  <section id="experience" class="py-16 px-6 bg-gray-50">
+    <div class="max-w-4xl mx-auto" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-8 text-center text-[#004aad]">Work Experience</h2>
+
+      <div class="mb-6">
+        <h3 class="text-xl font-semibold text-[#004aad]">Senior Software Engineer – Mercury NZ</h3>
+        <p class="text-sm text-gray-500">Jan 2024 – Present</p>
+        <ul class="list-disc list-inside mt-2 text-gray-700">
+          <li>Led release management and code review efforts across multiple projects.</li>
+          <li>Refactored legacy codebases to enhance maintainability and performance.</li>
+          <li>Managed branching strategies and resolved critical P1 issues.</li>
+        </ul>
+      </div>
+
+      <div class="mb-6">
+        <h3 class="text-xl font-semibold text-[#004aad]">Software Engineer – Mercury NZ</h3>
+        <p class="text-sm text-gray-500">May 2022 – Jan 2024</p>
+        <ul class="list-disc list-inside mt-2 text-gray-700">
+          <li>Implemented new website features and resolved key production bugs.</li>
+          <li>Upgraded Sitecore from 8.1 to 10.1 and redesigned the service sign-up process.</li>
+        </ul>
+      </div>
+
+      <div class="mb-6">
+        <h3 class="text-xl font-semibold text-[#004aad]">Software Developer – Trustpower</h3>
+        <p class="text-sm text-gray-500">Dec 2017 – May 2022</p>
+        <ul class="list-disc list-inside mt-2 text-gray-700">
+          <li>Redesigned and integrated Trustpower & Mercury websites post-merger.</li>
+          <li>Led development of abandoned cart and save-for-later e-commerce features.</li>
+        </ul>
+      </div>
+
+      <div class="mb-6">
+        <h3 class="text-xl font-semibold text-[#004aad]">Software Developer – Electrix</h3>
+        <p class="text-sm text-gray-500">Nov 2016 – Dec 2017</p>
+        <ul class="list-disc list-inside mt-2 text-gray-700">
+          <li>Developed LoneSafe, a cloud platform to monitor lone workers via Android devices.</li>
+        </ul>
+      </div>
+
+      <div class="mb-6">
+        <h3 class="text-xl font-semibold text-[#004aad]">Intern Software Developer – Massey University</h3>
+        <p class="text-sm text-gray-500">Aug 2016 – May 2017</p>
+        <ul class="list-disc list-inside mt-2 text-gray-700">
+          <li>Contributed to the virtual research environment portal for the Geoinformatics Collaboratory.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Carousel -->
+  <section id="testimonials" class="py-16 px-6 bg-white">
+    <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-8 text-[#004aad]">Testimonials</h2>
+      <div class="relative overflow-hidden max-w-2xl mx-auto">
+        <div id="testimonial-container" class="flex transition-transform duration-500 ease-in-out">
+          <!-- Testimonial slides (same structure, only content changes) -->
+          <div class="w-full flex-shrink-0 px-4">
+            <div class="bg-gray-100 rounded-xl p-6 shadow-md">
+              <p class="text-gray-700 italic">“I just wanted to say a great big thank you to you, Ashneel. Without your help and support as I am learning about my new team, the technology and the releases, I would probably be feeling very stressed by now. You are extremely proactive and take control of situations and tasks and nothing seems to be too much trouble for you. I don't know where I would be without you. Thank you again!!”</p>
+              <p class="mt-4 font-semibold text-gray-900">— Bev - Delivery Lead, Mercury NZ</p>
             </div>
-        <!--
-            <div class="row">
-                <div class="twelve columns">
-                    <h5 class="text-center">Software Engineer</h5>  
-               <!-_ ::after ->
-                </div>
-               <!- ::after ->
+          </div>
+          <div class="w-full flex-shrink-0 px-4">
+            <div class="bg-gray-100 rounded-xl p-6 shadow-md">
+              <p class="text-gray-700 italic">“Ashneel has stepped up to often be the contact point of a critical DEX customer onboarding flow (credit check) and in addition to showing great SME knowledge and a supporting attitude, 
+                he has also proactively updated and enhanced the documentation to assist others in the future showing leadership and a 'no silos' attitude - Great work Ash!”</p>
+              <p class="mt-4 font-semibold text-gray-900">— Samantha - Principal Software Engineer Mercury NZ</p>
             </div>
-        -->
-        
-        </header>
-        <!-- NAVBAR -->   
-        <div class="navbar-spacer"></div>
-        <!-- Small screen nav --> 
-        <nav class="navbar-small">  
-            <div class="container">
-                <div class="row">
-                    <div class="two columns">
-                        <a class="navbar-link" href="#about-me"><p class="text-center">about me</p></a>
-                    </div>
-                    <div class="two columns">
-                 <a class="navbar-link" href="#skills"><p class="text-center">skills</p></a>
-                    </div>
-                    <div class="two columns">
-                <a class="navbar-link" href="#experiences"><p class="text-center">experiences</p></a>
-                    </div>
-                    <div class="two columns">
-                 <a class="navbar-link" href="#education"><p class="text-center">education</p></a>
-                    </div>
-                    <div class="two columns">
-                        <a class="navbar-link" href="#resume"><p class="text-center"></p>download resume</a>
-                    </div>
-                    <div class="two columns">
-                        <a class="navbar-link" href="#contact"><p class="text-center"></p>contact</a>
-                    </div>
-                </div>
+          </div>
+          <div class="w-full flex-shrink-0 px-4">
+            <div class="bg-gray-100 rounded-xl p-6 shadow-md">
+              <p class="text-gray-700 italic">“Ashneel shows leadership in all his actions. He consistently steps in where there is a gap to fill. 
+                Thank you Ash, you make it a great place to work. MVP!”</p>
+              <p class="mt-4 font-semibold text-gray-900">— Ashlee - Product Owner, Mercury NZ</p>
             </div>
-            </nav>
-            <nav class="navbar">
-            
-            <div class="container">
-                <div class="nav-wrapper">
-                <ul class="navbar-list center">
-                    <li class="navbar-item">
-                        <a class="navbar-link" href="#about-me">about me</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="navbar-link" href="#skills">skills</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="navbar-link" href="#experiences">experiences</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="navbar-link" href="#education">education</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="navbar-link" href="#resume">download resume</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="navbar-link" href="#contact">contact</a>
-                    </li>
-                </ul>
-                </div>
+          </div>
+          <div class="w-full flex-shrink-0 px-4">
+            <div class="bg-gray-100 rounded-xl p-6 shadow-md">
+              <p class="text-gray-700 italic">“You are an amazing FE developer - you have such great knowledge and it really helps us to deliver quickly. This is specially important due to our team always having so much work piling up behind in hte backlog. 
+                Your effort on Save for Later was huge and you almost single handedly delivered this complex and frustrating feature. Thank you for this.”</p> </br>
+                <p class="text-gray-700 italic">“You are such a pleasure to have in the team! Great sense of humour and team spirit! 
+                    Ashlee and I rely on you a lot due to your amazing business knowledge and attitude. You are always there when we need your support. Thank you.”</p>
+                <p class="mt-4 font-semibold text-gray-900">— Bev - Delivery Lead, Mercury NZ</p>
             </div>
-    
-            </nav>
-    
-      
-
-<!-- About me section -->
-
-<section id ="about-me">
-	
-    <div class="container">
-    
-    <div class="row">
-    	<div class="twelve columns">
-        	<h4 class="section-title">about me</h4>
-            <div class="line"></div>
-            	<p class="justify">
-                    I am a recent graduate from Massey University in Bachelor of Information Sciences (BInfSc), majoring in Software Engineering. Currently seeking graduate/Junior level position in software or web design and development. 
-
-                <p></p>
-    	</div>
-         </div>
-
-    
-       <div class="line-close"></div>
-       </div>
-    
-</section>
-
-<section id = "skills">
-<div class="spacer"></div>
-</section>
-
-<section id ="skills2">
-    <div class="container">
-    	<div class="row">
-        	<div class="twelve columns">
+          </div>
+          <div class="w-full flex-shrink-0 px-4">
+            <div class="bg-gray-100 rounded-xl p-6 shadow-md">
+              <p class="text-gray-700 italic">“I think any given problem the team has, Ashneel is willing to step up and contribute or take on the challenge.  A recent example of this is with google analytics.   
+                His can-do positive attitude is a huge asset to the team and I truly admire it. Keep it up!”</p>
+              <p class="mt-4 font-semibold text-gray-900">— Ashlee - Product Owner, Mercury NZ</p>
             </div>
-            <h4 class="section-title">Skills</h4>
-            <div class="line"></div>
-            	<p class="justify">
-                </p>
-                <h5 class="sub-section-title">Technical Skills</h5>
-                <table>
-                    <thead>
-                        
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Programming Languages</td>
-                            <td>Java, C#, C/C++, HTML, CSS, JavaScript, XML, Haskell, Prolog, PHP, MySQL</td>
-                        </tr>
-                        <tr>
-                            <td><p>Tools</p></td>
-                            <td><p>Android Studio, Microsoft Visual Studios, Adobe Dreamweaver, Adobe Photoshop, GitHub, PhpMyadmin</p></td>
-                        </tr>
-                        <tr>
-                            <td>Platforms</td>
-                            <td>Apple MacOS, Microsoft Windows, Android</td>
-                        </tr>           
-                    </tbody>
-                    </table>
-                    
-                      <h5 class="sub-section-title">Other Skills</h5>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>Conflict Resolution</td>
-                            <td>Working in teams I have gained valuable skills in resolving conflict, taking initiative, and communicating with other members of the team </td>
-                        </tr>
-                        <tr>
-                            <td><p>Communications</p></td>
-                            <td><p>Communicating with clients, other team members</p></td>
-                        </tr>
-                               
-                    </tbody>
-                    </table>
-                
-                
-
-    	</div>
-    <div class="line-close"></div>
-    </div>
-
-</section>
-
-<section id = "experiences">
-<div class="spacer"></div>
-</section>
-
-<section id ="experiences2">
-    <div class="container">
-    	<div class="row">
-        	<div class="twelve columns">
+          </div>
+          <div class="w-full flex-shrink-0 px-4">
+            <div class="bg-gray-100 rounded-xl p-6 shadow-md">
+              <p class="text-gray-700 italic">“Ashneel is a competent and capable person who has grown into his role and place in the wider team, recently he has stepped up to the diverse leadership program and I would fully endorse him for future senior and leadership roles”</p>
+              <p class="mt-4 font-semibold text-gray-900">— Samantha - Principal Software Engineer, Mercury NZ</p>
             </div>
-            <h4 class="section-title">Experiences</h4>
-            <div class="line"></div>
-            
-            <p>
-            <strong>Software Developer</strong>
-            <span class="u-pull-right"> March 2016 - June 2017</span>
-            <br>
-            <span class="italic-color">Electrix Ltd.</span>
-
-            <br>
-            </p>
-            
-            <p class="justify">
-Worked with a team on a software project called LoneSafe for Electix Ltd. LoneSafe is a platform on the cloud that tracks lone workers through their android smart phone. LoneSafe allows Electrix to remotely monitor their workers, ensuring their safety. This project was initially supervised by Massey University as part of the final year software engineering project. Currently working at Electrix Ltd as a part time developer further developing the LoneSafe platform.     
-			</p>
-            <p>My roles in this project consists of: </p>
-            <ul>
-            <li> Android application development using Java/XML </li>
-            <li> Database Design and development using MySQL, PHP and phpMyAdmin </li>
-            </ul>
-            
-            <hr>
-            
-            <p>
-            <strong>Software Developer</strong>
-            <span class="u-pull-right"> August 2016 - May 2017</span>
-            <br>
-            <span class="italic-color"> Massey University</span>
-
-            <br>
-            </p>
-            
-            <p class="justify">
-			Software developer intern working with a team of other developers and Massey researchers to 												
-            design, develop and document a web-based virtual research environment for the Massey 	
-            Geoinformatics Collaboratory.
-
-      
-			</p>
-            <p class="justify">
-            <a href="http://geoinformatics.massey.ac.nz/" target="_blank">Read more about the Massey Geoinformatics Collaboratory here.</a></p>
-    	</div>
-    <div class="line-close"></div>
-    </div>
-
-</section>
-
-<section id = "education">
-<div class="spacer"></div>
-</section>
-
-<section id ="education2">
-    <div class="container">
-    	<div class="row">
-        	<div class="twelve columns">
+          </div>
+          <div class="w-full flex-shrink-0 px-4">
+            <div class="bg-gray-100 rounded-xl p-6 shadow-md">
+              <p class="text-gray-700 italic">“TP Prod Sitecore release.  - [External] had agreed to manage a prod deployment of an issue.  On deployment day [external] did not respond to messages and did not do the release.  I was super impressed with Ashneel in picking up the release and getting it done  with minimal fuss and zero issues.”</p></br>
+              <p class="text-gray-700 italic">“Always putting hand up to manage a project deployment,  outside of core hours.    -  
+                very adaptable and keen to help which makes the life of a delivery lead easy :) </p></br>
+                <p class="text-gray-700 italic">
+                taking the lead on code branching discussions to ensure the  wider development team are across the process and merging code as required for project releases.</p></br>
+                <p class="text-gray-700 italic">
+                very approachable and happy to help with advise etc. for the newbies. 
+                building on this - keep doing what you're doing  - being flexible, adaptable,  approachable and wiling to help, and taking the lead on chunky pieces of work. ”</p>
+              <p class="mt-4 font-semibold text-gray-900">— Brian - Delivery Lead, Mercury NZ</p>
             </div>
-            <h4 class="section-title">Education</h4>
-            <div class="line"></div>
-            	 <p>
-            	<strong>Massey University</strong>
-            	<span class="u-pull-right"> January 2013 - December 2016</span>
-            	<br>
-            <span class="italic-color"> Bachelor of Information Sciences (BInfSc), Software Engineering</span>
+          </div>
 
-            	<br>
-            	</p>
-                            
-               	<h6>Courses:</h6>
-                <h6 class="italic">Click for more informations</h6>
-                <ul id="sidelist">
-                <div class="line-close"></div>
-                <h6>Computer Science</h6>
-                  <li data-toggle="modal" data-target="#cs1">
-                  <a href="#education2">Programming Fundamentals</a></li>
-                  <li data-toggle="modal" data-target="#cs2">
-                  <a href="#education2">Computer Science Fundamentals</a></li>
-                  <li data-toggle="modal" data-target="#cs3">
-                  <a href="#education2">Algorithms & Data Structures</a></li>
-                  <li data-toggle="modal" data-target="#cs4">
-                  <a href="#education2">Object-Oriented Programming</a></li>
-                  <li data-toggle="modal" data-target="#cs5">
-                  <a href="#education2">Declarative Programming</a></li>
-                  <li data-toggle="modal" data-target="#cs6">
-                  <a href="#education2">Graphical Programming</a></li>
-                  <li data-toggle="modal" data-target="#cs7">
-                  <a href="#education2">Artificial Intelligence</a></li>
-                  <li data-toggle="modal" data-target="#cs8">
-                  <a href="#education2">Computer Networks</a></li>
-                  <li data-toggle="modal" data-target="#cs9">
-                  <a href="#education2">Internet Programming</a></li>
-                                  
-                </ul>
-                <ul id="sidelist">
-                <div class="line-close"></div>
-                <h6>Information Technology</h6>
-                <li data-toggle="modal" data-target="#it1">
-                <a href="#education2">Computer Application and the information age</a></li>
-                <li data-toggle="modal" data-target="#it2">
-                <a href="#education2">Systems management and testing</a></li>
-                <li data-toggle="modal" data-target="#it3">
-                <a href="#education2">Systems analysis and design</a></li>
-                <li data-toggle="modal" data-target="#it4">
-                <a href="#education2">Application Software and web development</a></li>
-                <li data-toggle="modal" data-target="#it5">
-                <a href="#education2">User Experience Design</a></li>
-                <li data-toggle="modal" data-target="#it6">
-                <a href="#education2">Database Development</a></li>
-                <li data-toggle="modal" data-target="#it7">
-                <a href="#education2">Application software development</a></li>
-                <li data-toggle="modal" data-target="#it8">
-                <a href="#education2">Network Security and the Internet</a></li>
-                <li data-toggle="modal" data-target="#it9">
-                <a href="#education2">Fundamentals of Information Technology</a></li>
-                </ul>
-               <ul id="sidelist">
-               <div class="line-close"></div>
-                <h6>Other</h6>
-                <li data-toggle="modal" data-target="#ot1">
-                <a href="#education2">Software Engineering Project</a></li>
-                <li data-toggle="modal" data-target="#ot2">
-                <a href="#education2">Management Information Systems</a></li>
-                <li data-toggle="modal" data-target="#ot3">
-                <a href="#education2">Introductory Statistics</a></li>
-                <li data-toggle="modal" data-target="#ot4">
-                <a href="#education2">Introductory Mathematics</a><br/></li>
-                <li data-toggle="modal" data-target="#ot5">
-                <a href="#education2">Written Communication for Inf-Sci</a></li>
-                <ul id="emptylist">
-               <li>&nbsp;</li>
-               <li>&nbsp;</li>
-               <li>&nbsp;</li>
-               <li>&nbsp;</li>
-               </ul>
-               </ul>
-               
-               
-                <hr>
-            	 <p>
-            	<strong>Northcote College</strong>
-            	<span class="u-pull-right"> January 2008 - December 2012</span>
-            	<br>
-            <span class="italic-color">National Certificate of Educational Achievement (NCEA), Level 3</span>
-            	<br>
-            	</p>
-                
-                <h6>Courses:</h6>
-                
-                <ul id="sidelist">
-                <div class="line-close"></div>
-                <h6>NCEA Level 1</h6>
-                <li>English</li>
-                <li>Mathematics</li>
-                <li>Information Communications Technology</li>
-                <li>Economics</li>
-                <li>Chemistry</li>
-                <ul id="emptylist">
-               <li>&nbsp;</li>
-               <li>&nbsp;</li>
-               </ul>
-                </ul>
-                
-                <ul id="sidelist">
-                <div class="line-close"></div>
-                <h6>NCEA Level 2</h6>
-                <li>English</li>
-                <li>Mathematics with Calculus</li>
-                <li>Web design</li>
-                <li>Accounting</li>
-                <li>Economics</li>
-                <li>Chemistry</li>
-                <ul id="emptylist">
-               <li>&nbsp;</li>
-               </ul>
-                
-             
-                </ul>
-                <ul id="sidelist">
-                <div class="line-close"></div>
-                <h6>NCEA Level 3</h6>
-                <li>English Literature</li>
-                <li>Mathematics with Calculus</li>
-                <li>Web dynamics</li>
-                <li>Economics</li>
-                <li>Physics</li>
-                <ul id="emptylist">
-               <li>&nbsp</li>
-               <li>&nbsp;</li>
-               
-               </ul>
-                </ul>
-                
-                
-    	</div>
-    <div class="line-close"></div>
-    </div>
-</section>
-
-<section id = "resume">
-<div class="spacer"></div>
-</section>
-
-<section id ="resume2">
-    <div class="container">
-    	<div class="row">
-        	<div class="twelve columns">
+          <div class="w-full flex-shrink-0 px-4">
+            <div class="bg-gray-100 rounded-xl p-6 shadow-md">
+              <p class="text-gray-700 italic">“You've proven to be a great resource on this project with your deep knowledge and leadership on the dev-ops side of things as well as branching strategies.
+                The effort you put in, stepping up to build out wiki articles and ensuring we are all on track doesn't go unnoticed!”</p></br>
+              <p class="text-gray-700 italic">“I've really appreciated the support with my on-boarding onto this project as well - 
+                You're one of the trusted veterans that I reach out to on the regular.</p></br>
+                <p class="text-gray-700 italic">
+                    In terms of team culture, I've noticed that you play a vital role in getting folks together including organizing the social aspects of BRP even though I wasn't there.</p></br>
+                <p class="text-gray-700 italic">
+                    From a developer perspective, I can see that you are very competent and produce high quality work. Build on this, learn every day, keep that thirst for knowledge and you'll only get better!”</p>
+              <p class="mt-4 font-semibold text-gray-900">— Ruben - Senior Software Engineer, Mercury NZ</p>
             </div>
-            <h4 class="section-title">Download my resume</h4>
-            <div class="line"></div>
-            
-            <a href="resources/AshneelKumar_Resume.pdf" target="_blank">
-            <img class="displayed" src="images/Resume.png" alt="Download CV" align= "middle" height="80" >
-            </a>
-            
-            
-         </div>
-     </div>
-</section>
-
-<section id ="contact">
-    <div class="container">
-    
-    	<div class="row">
-        	<div class="twelve columns">
+          </div>
+          <div class="w-full flex-shrink-0 px-4">
+            <div class="bg-gray-100 rounded-xl p-6 shadow-md">
+              <p class="text-gray-700 italic">“proactive mindset -
+                 things like seeking feedback, taking on feedback e.g around being a coach vs a hero, summer of tech, becoming slack champion, taking on tech debt discussions”</p>
+                 <p class="mt-4 font-semibold text-gray-900">— Anita - Delivery Lead, Mercury NZ</p>
             </div>
-            <h4 class="section-title">Contact</h4>
-            <div class="line"></div>
-            
-           <p class="text-center"><a href="mailto:ashneelakumar94@gmail.com" target="_blank" class="blue">ashneelakumar94@gmail.com</a></p>
-                    <p class="text-center"><a href="https://nz.linkedin.com/in/ashneelakumar" target="_blank" class="blue">LinkedIn</a></p>
-                    <p class="text-center"><a href="https://github.com/ashneelkumar" target="_blank" class="blue">GitHub</a></p>
-                
-            
-      
-            
-            
-         </div>
-     </div>
-</section>
-<!-- ----------------------------------------------------------------- -->
-
-<div>
-<!--
-             <div id="myModal" class="modal">
-                  <!-- Modal content -->
-         <!--         <div class="modal-content">
-                    <span class="close">x</span>
-                    <p>This introductory course teaches the fundamental concepts of using and programming 				computers through practical experience and problem-solving in a high-level language.</p>
-                  </div>
-                
-                </div>
-                -->
-                
- <!-- Modal -->
-
-<div id="cs1" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Programming Fundamentals</h4>
-      </div>
-      <div class="modal-body">
-        <p>This introductory course teaches the fundamental concepts of using and programming computers through practical experience and problem-solving in a high-level language.</p>
-        <p>Students who successfully complete this paper should be able to:</p>
-        <ol>
-        <li> Create simple algorithms</li>
-        <li> Express an algorithm as a program</li>
-        <li> Write technical computer programs that incorporate fundamental programming constructs such as conditionals, repetition, functions, pointers and recursion </li>
-        <li> Write technical computer programs that use console input/output and text files</li>
-        <li> Design, implement, test and debug simple computer programs</li>
-        
-        </ol>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>        </div>
+        <!-- Carousel Controls -->
+        <div class="flex justify-between mt-6 max-w-xs mx-auto">
+          <button onclick="prevTestimonial()" class="bg-gray-300 hover:bg-gray-400 text-gray-800 px-4 py-2 rounded-full">&larr;</button>
+          <button onclick="nextTestimonial()" class="bg-gray-300 hover:bg-gray-400 text-gray-800 px-4 py-2 rounded-full">&rarr;</button>
+        </div>
       </div>
     </div>
-    
-
-  </div>
-</div>
-
-<!------- ----->
-
-<div id="cs2" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Computer Science Fundamentals</h4>
-      </div>
-      <div class="modal-body">
-        <p>An introduction to computer science: the discipline, computer systems, the theory of problem-solving and computer applications. Practical laboratory work is an important part of this paper.</p>
-        <p>Students who successfully complete this paper should be able to:</p>
-        <ol>
-        <li> Write technical computer programs relating to a range of topics including the use of simple data structures and command line operations</li>
-        <li> Design simple logic circuits using Boolean algebra</li>
-        <li> Describe the fundamental elements of a computer and the importance of the binary number system </li>
-        <li> Design simple assembler programs for a virtual machine</li>        
-        </ol>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!------- ----->
-
-<div id="cs3" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Algorithms & Data Structures</h4>
-      </div>
-      <div class="modal-body">
-        <p>Structured types. Array, list, tree and graph algorithms. Hash tables. Dynamic data structures. Abstract data types. Laboratory work is an important part of this course.</p>
-        
-        <p>Students who successfully complete this paper should be able to:</p>
-        <ol>
-        <li>Represent lists, stacks, queues, and other data structures in an appropriate way for the target programming language.</li>
-        <li> Explain the advantages/disadvantages of particular representations of these structures in particular circumstances.</li>
-        <li> Design and implement computer programs that make use of these structures. </li>
-        <li> Discuss the concepts of Abstract Data Types, including encapsulation and data hiding. </li>        
-        </ol>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!------- ----->
-<div id="cs4" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Object-Oriented Programming</h4>
-      </div>
-      <div class="modal-body">
-        <p>Introduction to Object-Oriented programming; classes, objects, templates, inheritance, polymorphism, iterators, object libraries.</p>
-         <p>Students who successfully complete this paper should be able to:</p>
-        <ol>
-        <li>Design and implement C++ programs using object-oriented programming techniques. </li>
-        <li>Design and implement C++ programs , using inheritance, polymorphism, exception handling.</li>
-        <li>Design and implement programs, using templates and the STL object library.  </li>      
-        </ol>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!------- ----->
-<div id="cs5" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Declarative Programming</h4>
-      </div>
-      <div class="modal-body">
-        <p>Basic functional programming: functions, pattern matching, types, recursion, list processing. Basic logic programming: clauses, recursion, structures, arithmetic, list processing. Programming language concepts. Programming paradigms and language selection.</p>
-         <p>Students who successfully complete this paper should be able to:</p>
-        <ol>
-        <li>Design, write and run functional and logic programs using simple programming concepts: types, functions, recursion, pattern matching, facts, rules, predicates. </li>
-        <li>Analyse the correctness and evaluate the design of given functional and logic programming modules. </li>
-        <li>Design, write, test and run programs using advanced programming concepts: data abstraction, list, polymorphisms and overloading. </li>
-        <li>Analyse a moderately complex given problem, identify and design data types and modules necessary to solve the problem using basic and advanced functional programming concepts, write, run and test the program. </li>   
-        <li>Analyse a moderately complex given problem, identify and design the required data types and modules necessary to solve the problem using basic and advanced logic programming concepts, write, run and test the program. </li>   
-        <li>Describe the main attributes of the declarative programming paradigm, the difference between functional and logic programming languages, and the difference between imperative and declarative programming paradigm. </li>   
-        </ol>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!------- ----->
-<div id="cs6" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Graphical Programming</h4>
-      </div>
-      <div class="modal-body">
-        <p>Programming graphical-user-interfaces using an event-driven model. Drawing and transformation of graphical objects. Rendering in 3D. Animation techniques. Programming with graphical libraries.</p>
-         <p>Students who successfully complete this paper should be able to:</p>
-        <ol>
-        <li>Describe key concepts in computer graphics. </li>
-        <li>Design computer programs that display simple graphics in 2D and 3D using Java. </li>
-        <li>Discuss the graphics concepts pertaining to computer games and virtual reality simulations. </li> 
-        <li>Identify the advantages and disadvantages of various graphics systems and technologies.</li>     
-        </ol>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!------- ----->
-<div id="cs7" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Artificial Intelligence</h4>
-      </div>
-      <div class="modal-body">
-        <p>AI programming. State space representation and search. Heuristics. Planning. Game playing. Knowledge representation. Knowledge-based systems. Natural language processing. Machine learning. Reasoning under uncertainty. Philosophical issues. </p>
-         <p>Students who successfully complete this paper should be able to:</p>
-        <ol>
-        <li>Describe the main Artificial Intelligence techniques used in computing.</li>
-        <li>Design and program computers to store and manipulate knowledge.  </li>
-        <li>Describe, and in some cases program, the special techniques that can be used to perform intelligent tasks such as searching, game playing, natural language processing and machine learning by computers.  </li>
-        <li>Use logic for inference and fuzzy logic and some of its applications.  </li> 
-        <li>Identify the advantages and disadvantages of applying various AI techniques in solving real world problems through exploring the various applications of AI.  </li> 
-              
-        </ol>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!------- ----->
-<div id="cs8" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Computer Networks</h4>
-      </div>
-      <div class="modal-body">
-        <p>A layered approach to data communications and the Internet protocols.</p>
-         <p>Students who successfully complete this paper should be able to:</p>
-        <ol>
-        <li>Describe key computer network concepts, architectures and protocols. </li>
-        <li>Relate algorithms, network services and products to each other. </li>
-        <li>Apply concepts and principles to network design and management using the current standards. </li> 
-        <li>Apply fundamental network analysis tools. </li> 
-        <li>Discuss professional and ethical issues relating to data communication systems and their application, especially concerning Internet security. </li> 
-        <li>Apply the recent acquired knowledge to develop or apply simple network related programs. </li>      
-        </ol>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!------- ----->
-<div id="cs9" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Internet Programming</h4>
-      </div>
-      <div class="modal-body">
-        <p>Advanced concepts of programming computers across the Internet: scripting, HTML, client and server-side programs, distributed objects, distributed object frameworks, security.</p>
-         <p>Students who successfully complete this paper should be able to:</p>
-        <ol>
-        <li>Describe the main techniques used in Internet Programming. </li>
-        <li>Implement a database driven Internet Application using PHP and MySQL. </li>
-        <li>Implement a server side application using servlets, JSPs and J2EE components. </li> 
-        <li>Apply the Internet Programming design concepts in solving real world problems. </li>
-        <li>Identify the advantages and disadvantages of various Internet Programming techniques to real world problems.</li>
-        <li>Demonstrate knowledge of new and emerging internet programming technologies. </li>     
-        </ol>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!------- IT Modals ----->
-
-<div id="it1" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Computer Application and the information age</h4>
-      </div>
-      <div class="modal-body">
-        <p>A broad based and practical introduction to the applications of IT and computers that pervade today's society. A range of software applications will be studied in their context of use, enabling an understanding not only of technical issues but also the social, ethical and organisational aspects of applied computing.</p>
-         <p>Students who successfully complete this paper should be able to:</p>
-        <ol>
-        <li>Explain key components of stand-alone and networked information technology systems. </li>
-        <li>Explain key concepts relating to software development and data storage. </li>
-        <li>Discuss the impact of information technology on individuals, business and society. </li> 
-        <li>Apply software tools to the creation, analysis and presentation of data. </li>
-        <li>Illustrate how computer applications are specified and built by applying a variety of tools. </li>
-           
-        </ol>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-<!------- ----->
-
-<div id="it2" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Systems management and testing</h4>
-      </div>
-      <div class="modal-body">
-        <p>A discussion of the technical concepts and software issues that IT managers require to plan, operate and maintain computer-based systems and software assets. The paper also considers some core issues in software testing.</p>
-         <p>Students who successfully complete this paper should be able to:</p>
-        <ol>
-        <li>Describe different software system contexts including open source and legacy software. </li>
-        <li>Contrast the general features, benefits, and limitations of different approaches to software system acquisition, development and management. </li>
-        <li>Identify the key aspects and decisions related to system testing, acceptance, and evaluation. </li> 
-        <li>Use appropriate tools and techniques for software testing and the management of software assets. </li>
-        <li>Formulate software testing strategies. </li>
-        
-        </ol>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!------- ----->
-<div id="it3" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Systems analysis and design</h4>
-      </div>
-      <div class="modal-body">
-        <p>A study of methods used to capture, analyse and model system requirements. Students will acquire practical skills through case study work utilising techniques and software tools used by industry.</p>
-         <p>Students who successfully complete this paper should be able to:</p>
-        <ol>
-        <li>Describe the fundamental concepts and techniques of systems analysis. </li>
-        <li>Apply the basic principles and techniques for eliciting, gathering and documenting the functional requirements of an IT system. </li>
-        <li>Discuss and explain different software development life cycle models and issues concerned with the development of high quality software. </li> 
-        <li>Incrementally and iteratively use the Unified Modelling Language (UML) to model systems from requirements. </li>
-        <li>Demonstrate practical skills in the use of at least one Computer Aided Software Engineering (CASE) tool. </li>
-        <li>Apply object-oriented principles and architectures to the specification of software systems </li>     
-        </ol>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-<!------- ----->
-<div id="it4" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Application Software and web development</h4>
-      </div>
-      <div class="modal-body">
-        <p>An introduction to web-based application development. This paper explores a selection of topics and technologies relevant to the design and creation of web-based systems.</p>
-         <p>Students who successfully complete this paper should be able to:</p>
-        <ol>
-        <li>Analyse business and usage models for web-based technologies. </li>
-        <li>Identify appropriate analysis and design techniques to develop web applications, including graphical design. </li>
-        <li>Contrast the technology layers of web applications and be able to implement some of them. </li> 
-        <li>Create web sites containing textual and multimedia content. </li>
-        <li>Select appropriate technologies to implement web-based applications that may include client side processing and various forms of structured and semi structured data. </li>
-          
-        </ol>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-<!------- ----->
-<div id="it5" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">User Experience Design</h4>
-      </div>
-      <div class="modal-body">
-        <p>The course moves from conceptual analysis to the design, prototyping and implementation and evaluation of user interfaces. It emphasises development processes that result in interfaces that provide a superior user experience. Examples of real-life interfaces, from sources such as desktop, multimedia, web, novel, and mobile technologies are used. Significant practical work component.</p>
-         <p>Students who successfully complete this paper should be able to:</p>
-        <ol>
-        <li>Discuss the iterative nature of the user interface development lifecycle (IDLC), including user and task modelling. </li>
-        <li>Define interface usability in the context of different kinds of applications, interaction devices, paradigms, metaphors and styles. </li>
-        <li>Apply critical thinking and aesthetic judgement to the assessment of user interfaces. </li> 
-        <li>Use iterative design techniques to design and test a prototype for an elegant user interface. </li>
-        <li>Carry out an interface evaluation. </li>
-        <li>Work successfully in a group on projects related to interface design and evaluation. </li>     
-        </ol>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-<!------- ----->
-
-<div id="it6" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Database Development</h4>
-      </div>
-      <div class="modal-body">
-        <p>A study of the application of software engineering principles to the development of databases for information systems. Modern database principles, issues and development methods including conceptual modelling, logical and physical design, implementation, database languages (e.g. SQL), distributed database design, and methods for interfacing with the web are covered. Students will acquire practical skills utilising modern tools and techniques used by industry.</p>
-         <p>Students who successfully complete this paper should be able to:</p>
-        <ol>
-        <li>Implement a logical database design using SQL to create, populate and maintain it. </li>
-        <li>Write queries to relational databases using SQL. </li>
-        <li>Apply the rules of normalization to a relational database table. </li> 
-        <li>Understand the fundamentals of databases, including the concepts of transaction management and concurrency control, and in particular of the relational model of data. </li>
-        <li>Create a conceptual database design using the ER model, from an understanding of user requirements. </li>
-        <li>Understand the different operators of Relational Algebra. </li>     
-        </ol>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-<!------- ----->
-
-<div id="it7" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Application software development</h4>
-      </div>
-      <div class="modal-body">
-        <p>Descripton</p>
-         <p>Students who successfully complete this paper should be able to:</p>
-        <ol>
-        <li>A study of the rudiments of structured and object-oriented software development methods and techniques. Students will utilise a modern integrated development environment to gain practical skills. </li>
-        <li>Develop programs using an object-oriented paradigm that embody principles of loose coupling, high cohesion and modularity. </li>
-        <li>Apply event-driven solutions using a combination of object and procedural paradigms in a visual programming integrated development environment. </li> 
-        <li>Use structured exception handling and debugging for developing more robust programs. </li>
-        <li>Define classes using encapsulation and explain the role of inheritance, polymorphism and interfaces in the development of software. </li>
-        <li>Develop software using a test-driven methodology and implement code refactoring. </li>     
-        </ol>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-<!------- ----->
-
-<div id="it8" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Network Security and the Internet</h4>
-      </div>
-      <div class="modal-body">
-        <p>A study of the basic principles of digital communications, Internet technologies, communications software, local area network design, client-server system design, middleware and available wide-area network services from the viewpoint of a software engineer/designer developing networked information systems.</p>
-         <p>Students who successfully complete this paper should be able to:</p>
-        <ol>
-        <li>Explain basic principles of data communications. </li>
-        <li>Discuss the differences between common network architectures. </li>
-        <li>Describe client/server system architectures and design requirements.</li> 
-        <li>Explain common network security and privacy mechanisms. </li>
-        <li>Perform basic networking and server management tasks. </li>
-       
-        </ol>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-<!------- ----->
-
-<div id="it9" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Fundamentals of Information Technology</h4>
-      </div>
-      <div class="modal-body">
-        <p>This paper demonstrates how the core components of information technology, including programming, databases, networking, web technologies and human computer interaction, combine to form complex information technology solutions.</p>
-         <p>Students who successfully complete this paper should be able to:</p>
-        <ol>
-        <li>Identify the roles of programming, databases, networking, web technologies and human computer interaction in complex information technology solutions. </li>
-        <li>Describe how hardware and software components work together to form complex information technology solutions. </li>
-        <li>Use tools to explore the setup and working of complex information technology solutions. </li> 
-        <li>Carry out the role of a systems administrator in a practical context. </li>
-        <li>Discuss issues important to the development and support of complex information technology solutions.  </li>
-          
-        </ol>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-<!------- ----->
-
-<div id="ot1" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Software Engineering Project</h4>
-      </div>
-      <div class="modal-body">
-        <p>A significant practicum implementing programming concepts and methods. The paper involves project work.</p>
-         <p>Students who successfully complete this paper should be able to:</p>
-        <ol>
-        <li>Have had the experience of working in a small team to: design, build, test, document and demonstrate a significant piece of software. </li>
-        <li>Be familiar with modern software engineering concepts in the context of actual software and programming. </li>
-        <li>Present their software design ideas to a technical audience. </li>    
-        </ol>
-        
-        <p class="italic"><a href="#experiences2">See "Electrix Ltd" under Experiences</a></p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!------- ----->
-
-<div id="ot2" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Management Information Systems</h4>
-      </div>
-      <div class="modal-body">
-        <p>An introductory study of the roles and applications of information systems in organisations and society. The paper emphasises the development of information systems, and their uses for communication, goal achievement and knowledge management in applied contexts.</p>
-         <p>Students who successfully complete this paper should be able to:</p>
-        <ol>
-        <li>Classify management information systems according to their capabilities and their impact on organisations and society. </li>
-        <li>Assess the potential of information systems to secure competitive advantage in a given business situation. </li>
-        <li>Characterize the impact of information systems on internal and external communication. </li> 
-        <li>Communicate and manage data through the use of personal productivity software tools. </li>
-        <li>Use graphical notation to capture application domain knowledge relevant to information systems development. </li>
-        <li>Analyse the issues involved in the design, implementation and management of supply chains and networks. </li>     
-        </ol>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-<!------- ----->
-
-<div id="ot3" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Introductory Statistics</h4>
-      </div>
-      <div class="modal-body">
-        <p>Applied statistics emphasising applications in the sciences and social sciences. Use of graphs and numbers to summarise and interpret data; data collection with surveys and experiments; elementary probability and sampling distributions to describe variability; inference for means, proportions, contingency tables and regression.</p>
-         <p>Students who successfully complete this paper should be able to:</p>
-        <ol>
-        <li>Choose graphical and numerical summaries of a batch of values and use them to answer questions about variability in the data. </li>
-        <li>Summarise the relationship between two numerical or categorical variables. </li>
-        <li>Critically examine data collected by others and the conclusions that they draw. </li> 
-        <li>Effectively present the information that you extract from data to others. </li>
-        <li>Collect data with surveys and experiments to help answer real-life questions. </li>
-        <li>Use distributions and sampling to model variability in data. </li> 
-        <li>Estimate population characteristics with confidence intervals. These characteristics include means, proportions, differences between means, differences between proportions, regression slopes and predictions from regression lines. </li> 
-        <li>Use hypothesis tests to assess whether there are differences between groups or relationships between variables. </li>     
-        </ol>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!------- ----->
-
-<div id="ot4" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Introductory Mathematics</h4>
-      </div>
-      <div class="modal-body">
-        <p>A paper designed to increase the confidence of students in handling mathematical concepts and skills. Content includes algebraic skills, functions and graphs, and an introduction to matrices and calculus.</p>
-         <p>Students who successfully complete this paper should be able to:</p>
-        <ol>
-        <li>Show confidence when dealing with mathematical problems. </li>
-        <li>Demonstrate proficiency with the fundamental concepts, processes and functions used in modelling the real world mathematically. </li>
-        <li>Demonstrate proficiency with the basic ideas and processes of matrices. </li> 
-        <li>Demonstrate proficiency with the basic ideas and processes of differential and integral calculus. </li>
-           
-        </ol>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!------- ----->
-
-<div id="ot5" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Written Communication for Information Sciences</h4>
-      </div>
-      <div class="modal-body">
-        <p>Students learn to express their ideas effectively in writing in a manner appropriate to both the university and the information technology industry. Regular and focused writing practice is an essential component of the paper.</p>
-         <p>Students who successfully complete this paper should be able to:</p>
-        <ol>
-        <li>Demonstrate competence in the conventions and techniques of technical writing. </li>
-        <li>Develop strategies for working collaboratively. </li>
-        <li>Develop strategies for planning, researching, revising, and presenting reports. </li> 
-        <li>Critically evaluate and synthesise information from a range of sources. </li>
-        <li>Prepare for communication requirements at management level in the IT industry. </li>  
-        </ol>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!------- ----->
-                
-</div>
-
-    
-<!-- ----------------------------------------------------------------- -->
-<footer class="text-center">
-  <div class="container">
-    <div class="row">
-      <div>
-        <p class="text-centre-white ">Ashneel Kumar © 2016</p>
-      </div>
-    </div>
-  </div>
-</footer>
-<script type="text/javascript" async src="http://www.google-analytics.com/ga.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script>
-window.jQuery || document.write('<script src="js/vendor/jquery-2.1.4.min.js"><\/script>');
-</script>
-<script src="js/site.js"></script>
-
-<!-- Analytics -->
-<script type="text/javascript">
-
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-46269729-1']);
-        _gaq.push(['_trackPageview']);
-        (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-    
-</script>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
- <script src="js/jquery-1.11.2.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script src="js/bootstrap.min.js"></script>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 text-center py-6 text-sm text-gray-500">
+    &copy; 2025 Ashneel Kumar.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true });
+
+    let testimonialIndex = 0;
+    const container = document.getElementById('testimonial-container');
+    const total = container.children.length;
+
+    function updateCarousel() {
+      container.style.transform = `translateX(-${testimonialIndex * 100}%)`;
+    }
+
+    function nextTestimonial() {
+      testimonialIndex = (testimonialIndex + 1) % total;
+      updateCarousel();
+    }
+
+    function prevTestimonial() {
+      testimonialIndex = (testimonialIndex - 1 + total) % total;
+      updateCarousel();
+    }
+  </script>
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 </body>
 </html>
